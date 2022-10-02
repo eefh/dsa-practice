@@ -15,9 +15,9 @@ const countOdd = (arr) => {
 const quickSort = (arr) => {
     return arr.length < 2
         ? arr
-        : quickSort(arr.filter((n) => n < arr[1])).concat(
+        : sortArr(arr.filter((n) => n < arr[1])).concat(
               arr[1],
-              quickSort(arr.filter((n) => n > arr[1]))
+              sortArr(arr.filter((n) => n > arr[1]))
           );
 };
 let sorted = quickSort(arr);
@@ -79,3 +79,4 @@ const BFS = (graph) => {
 
 graph.ethan.neighbors.forEach((i) => queue.enqueue(i));
 console.log(BFS(graph));
+console.log(sorted);
