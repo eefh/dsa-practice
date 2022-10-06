@@ -35,3 +35,18 @@ function minimalHeaviestSetA(arr) {
 }
 let array = [3, 7, 5, 6, 2, 2];
 console.log(array.sort());
+
+let a = {
+    i: 1,
+    valueOf() {
+        return this.i;
+    },
+};
+
+if (a == 1) {
+    console.log(true);
+}
+
+class HashMap {
+    getItem = (key) => {};
+}
